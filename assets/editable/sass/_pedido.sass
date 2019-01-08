@@ -1,0 +1,89 @@
+#politica-error
+  position: absolute
+  bottom: -11px
+  left: 0
+  width: 100%
+.popupInternoGlobal
+  .boxPedido
+    position: absolute
+    bottom: 0
+    right: 20%
+    width: 415px
+    background: #E4F1FD
+    border-radius: 10px 10px 0 0
+    padding: 2rem 2.5rem
+    box-sizing: border-box
+    text-align: center
+    label
+      &.error
+        display: block
+        color: #f00
+        font-family: "museo_sans500"
+        font-size: .75rem
+        margin: auto
+        width: 60%
+    span
+        font-family: "museo_sans500"
+        font-size: .7rem
+        text-align: justify
+        color: $celeste
+        display: block
+        width: 70%
+        margin: 1rem auto 0
+    .rowPedido
+      margin-bottom: .5rem
+      &.center
+        margin: auto
+        position: relative
+      &.separate
+        padding-bottom: 30px
+      &.lineaFlex
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, flex-start)
+        width: 200px
+        p
+          font-family: "museo_sans500"
+          font-size: .7rem
+          text-align: justify
+          margin-left: .45rem
+    button
+      background: $celesteClaro
+      padding: .45rem .5rem
+      border: 0
+      cursor: pointer
+      line-height: 1rem
+      border-radius: 8px
+      color: white
+      font-size: .8rem
+      position: relative
+      margin: 1rem auto 0
+      width: 60%
+    input[type="text"]
+      border-radius: 5px
+      border: 1px solid $celeste
+      color: $azul
+      padding: .25rem
+      width: 60%
+      font-family: "museo_sans500"
+      font-size: .7rem
+    textarea
+      border-radius: 5px
+      border: 1px solid $celeste
+      color: $azul
+      padding: .25rem
+      width: 60%
+      height: 40px
+      font-family: "museo_sans500"
+      font-size: .7rem
+    img
+      margin: 0 auto .75rem
+      text-align: center
+    h3
+      font-size: .85rem
+      font-family: "museo_sans_cyrl700"
+      color: $azul
+      text-align: center
+      margin-bottom: 1rem

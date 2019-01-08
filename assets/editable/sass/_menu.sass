@@ -1,0 +1,185 @@
+nav
+  padding-top: 3rem
+  .mainMenu
+    @include prefix(display, flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, center)
+    @include prefix(align-items, center)
+    li
+      margin-right: 0rem
+      position: relative
+      padding: 12px 33px 50px
+      &:last-child
+        margin-right: 0
+      a
+        color: #0494D9
+        font-size: .85rem
+        font-family: "museo_sans_cyrl700"
+
+        // border: 1px solid red
+
+        display: block
+        &.logo
+          padding: 0
+        &.btn-search
+          span
+            color: rgba(4,148,217,0.5)
+            margin-left: .35rem
+      .submenu
+        position: absolute
+        background: $celeste
+        width: 100vw
+        z-index: 800
+        left: 0
+        top: 5rem
+        display: none
+        padding: 2rem 1.75rem
+        .boxImage
+          background: white
+          padding: 2rem 1rem
+          border-radius: 30px
+          @include prefix(display, flex)
+          @include prefix(flex-direction, column)
+          @include prefix(flex-wrap, nowrap)
+          @include prefix(justify-content, center)
+          @include prefix(align-items, center)
+          a
+            padding: 0 0 .5rem
+            margin-bottom: 1rem
+            border-bottom: 1px solid #172A91
+            &:last-child
+              margin-bottom: 0rem
+              border-bottom: 0px solid #172A91
+
+        .boxRow
+          @include prefix(display, flex)
+          @include prefix(flex-direction, row)
+          @include prefix(flex-wrap, nowrap)
+          @include prefix(justify-content, space-between)
+          @include prefix(align-items, flex-start)
+          .boxCol
+            margin-right: 2rem
+            &:last-child
+              margin-right: 0
+            .contentOpciones
+              margin-top: 1rem
+              &:first-child
+                margin-top: 0
+          h2
+            color: white
+            font-size: 1rem
+            font-family: "museo_sans_cyrl100"
+            margin-bottom: .75rem
+          .boxOpciones
+            @include prefix(display, flex)
+            @include prefix(flex-direction, row)
+            @include prefix(flex-wrap, nowrap)
+            @include prefix(justify-content, space-between)
+            @include prefix(align-items, flex-start)
+            .navOpciones
+              margin-right: 0rem
+              &:last-child
+                margin-right: 0
+              a
+                color: white
+                font-size: .7rem
+                font-family: "museo_sans500"
+                line-height: 1.75em
+      &.abrirMenu
+        &:hover
+          background: $celeste
+          a
+            color: white
+          .submenu
+            display: block
+header
+  &.headerMain
+    height: 62px
+    box-sizing: border-box
+    background: $celeste
+    .container
+      height: 100%
+    .optionRight
+      &.optionLogueado
+        ul
+          li
+            margin-right: 2rem
+            &:last-child
+              margin-right: 0
+      ul
+        @include prefix(display, flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, center)
+        li
+          margin-right: 3rem
+          &:last-child
+            margin-right: 0
+          a
+            span
+              display: block
+              text-align: center
+              &.boxIcon
+                .svg-inline--fa
+                  color: white
+                  font-size: 1rem
+                  &.fa-shopping-cart
+                    transform: rotateY(180deg)
+              &.texto
+                font-size: .7rem
+                color: white
+                font-family: "museo_sans500"
+    .boxOption
+      @include prefix(display, flex)
+      @include prefix(flex-direction, row)
+      @include prefix(flex-wrap, nowrap)
+      @include prefix(justify-content, space-between)
+      @include prefix(align-items, center)
+      height: inherit
+      .optionLeft
+        @include prefix(display, flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, flex-start)
+        .boxSocial
+          @include prefix(display, flex)
+          @include prefix(flex-direction, row)
+          @include prefix(flex-wrap, nowrap)
+          @include prefix(justify-content, flex-start)
+          @include prefix(align-items, flex-start)
+          li
+            margin-right: 2rem
+            &:last-child
+              margin-right: 0
+            a
+              color: white
+              font-size: .8rem
+              transition: .5s all ease
+              font-family: "museo_sans500"
+              &:hover
+                color: rgba(255, 255, 255, .75)
+            .svg-inline--fa
+              color: white
+              font-size: 1.5rem
+              transition: .5s all ease
+              &:hover
+                color: rgba(255, 255, 255, .75)
+      .hamburger-inner
+        margin-right: 7rem
+        display: none
+        a
+          display: block
+          width: 39px
+          height: 28px
+          span
+            display: block
+            width: inherit
+            height: 4px
+            background: white
+            border-radius: 5px
+            margin-bottom: 7px
+            &:last-child
+              margin-bottom: 0

@@ -1,0 +1,114 @@
+.product-list
+  margin: 3rem 0 4rem
+  padding: 0rem 1rem
+  @include prefix(display,flex)
+  @include prefix(flex-direction, row)
+  @include prefix(flex-wrap, wrap)
+  @include prefix(justify-content, center)
+  @include prefix(align-items, center)
+  @media screen and (min-width: 375px)
+    padding: 0rem 4rem
+  @media screen and (min-width: 728px)
+    padding: 0rem 0rem
+  .boxProduct
+    position: relative
+    padding-top: 1.5rem
+    min-height: 360px
+    width: 80%
+    margin-bottom: 4rem
+    @media screen and (min-width: 375px)
+      width: 80%
+    @media screen and (min-width: 600px)
+      width: 50%
+    @media screen and (min-width: 728px)
+      width: 30%
+    @media screen and (min-width: 1000px)
+      width: 25%
+    @media screen and (min-width: 1088px)
+      width: 25%
+    @media screen and (min-width: 1280px)
+      width: 20%
+    &:hover
+      .overflow
+        display: block
+    &.heightProduct
+      min-height: 360px
+    .overflow
+      position: absolute
+      border-radius: 40px
+      display: none
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background: $celeste
+      // rgba(4, 148, 217, .95)
+      z-index: 100
+      .boxOverflow
+        height: inherit
+        @include prefix(display,flex)
+        @include prefix(flex-direction, column)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, space-between)
+        @include prefix(align-content, center)
+        @include prefix(align-items, center)
+        text-align: center
+        .infoFooter
+          color: white
+          font-family: "museo_sans500"
+          font-size: .95rem
+          padding-bottom: 1rem
+          text-transform: uppercase
+        .info
+          h3, h4
+            color: white
+            font-family: "museo_sans500"
+            font-size: 1.25rem
+            line-height: 1em
+          h4
+            font-size: 2.25rem
+            line-height: 1.75em
+            font-family: "museo_sans500_italic"
+          a
+            display: block
+            background: white
+            padding: 3px 0
+            font-size: 1rem
+            line-height: 1.5em
+            font-family: "museo_sans500_italic"
+            // border: 1px solid #FDC908
+            margin-top: .75rem
+            span
+              margin-left: .5rem
+
+    .boxDetail
+      padding-top: 1rem
+      padding-bottom: 1rem
+      .price
+        color: #002694
+        font-family: "museo_sans500"
+        font-size: 1rem
+        line-height: 1.85em
+        text-align: center
+      .info
+        color: #0494D9
+        font-family: "museo_sans500"
+        font-size: .8rem
+        line-height: 1em
+        text-align: center
+    .boxImg
+      overflow: hidden
+      height: 200px
+      @include prefix(display,flex)
+      @include prefix(flex-direction, column)
+      @include prefix(flex-wrap, nowrap)
+      @include prefix(justify-content, center)
+      @include prefix(align-items, center)
+      img
+        // display: block
+        // width: 100%
+        // height: 100%
+        // object-fit: cover
+        max-width: auto
+        max-height: 80%
+        width: auto

@@ -1,0 +1,63 @@
+footer
+  background: $celeste
+  padding-bottom: 1.5rem
+  .text-footer
+    color: white
+    font-size: .65rem
+    transition: .5s all ease
+    letter-spacing: -.05em
+    font-family: "museo_sans500"
+    text-align: center
+    margin-top: .3rem
+  .boxSocial
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, center)
+    @include prefix(align-items, flex-start)
+    li
+      margin-right: 1.5rem
+      &:last-child
+        margin-right: 0
+      a
+        color: white
+        font-size: 1.65rem
+        transition: .5s all ease
+        font-family: "museo_sans500"
+        &:hover
+          color: rgba(255, 255, 255, .85)
+  .boxAccesos
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, center)
+    @include prefix(align-items, flex-start)
+    padding: 3rem 0 4rem
+    ul
+      margin-right: 3rem
+      &:last-child
+        margin-right: 0
+      li
+        p
+          &.title
+            color: white
+            font-size: 1rem
+            font-family: "museo_sans500"
+            line-height: 1em
+            margin-bottom: .85rem
+            height: 30px
+          &.center
+            text-align: center
+        a
+          color: white
+          font-size: .8rem
+          font-family: "museo_sans_cyrl100"
+          transition: .5s all ease
+          &:hover
+            color: rgba(255,255,255,.75)
+          &.center
+            text-align: center
+            margin: auto
+            display: block
+          .fa-book-open
+            font-size: 3rem

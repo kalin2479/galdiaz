@@ -1,0 +1,34 @@
+.boxSedes-contact
+  width: 80%
+  margin: auto
+  &.boxSedes-contact
+    width: 70%
+    .boxRow
+      .boxColumn
+        &:first-child
+          width: 20%
+        &:last-child
+          width: 80%
+  .boxRow
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, wrap)
+    @include prefix(justify-content, space-between)
+    @include prefix(align-items, center)
+    padding-bottom: 1.5rem
+    border-bottom: 1px solid $celesteClaro
+    margin-bottom: 1.5rem
+    .boxColumn
+      .boxLocation
+        img
+          max-width: 30%
+      p,a
+        font-size: .85rem
+        line-height: 1.5em
+        color: #172A91
+        font-family: "museo300"
+        color: $celesteClaro
+      a
+        display: block
+        &:hover
+          text-decoration: none

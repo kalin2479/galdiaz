@@ -1,0 +1,219 @@
+.spanLogin
+  color: #002694
+  font-family: "museo_sans500"
+  font-size: .8rem
+  line-height: 1.25em
+  text-align: left
+  width: 9rem
+  &.title
+    width: auto
+    font-size: 1.25rem
+    text-align: center
+    font-family: "museo300"
+  &.wauto
+    width: auto
+    padding-left: 9rem
+.boxLegalProduct
+  padding: 5rem 0
+  p
+    color: #002694
+    font-family: "museo_sans500"
+    font-size: .8rem
+    line-height: 1.25em
+    text-align: center
+.boxIconCar
+  @include prefix(display,flex)
+  @include prefix(flex-direction, row)
+  @include prefix(flex-wrap, nowrap)
+  @include prefix(justify-content, center)
+  @include prefix(align-items, center)
+  padding-top: 2rem
+  &.back
+    padding-top: 0
+    a
+      color: $celeste2
+  a
+    color: rgba(255, 255, 255, 1)
+    transition: .5s all ease
+    text-align: center
+    font-size: .8rem
+    &:first-child
+      margin-right: 1.85rem
+    &.circule
+      border-radius: 50%
+      border: 1px solid white
+      width: 20px
+      height: 20px
+    &.heart
+      font-size: 1.25rem
+      .span-header
+        display: none
+        &.active
+          display: block
+    &:hover
+      color: rgba(255, 255, 255, 0.75)
+
+.banner-home
+  .boxBannerCarousel
+    padding-top: 3rem
+    .container
+      .banner-owl
+        img
+          display: block
+          width: 100%
+          height: 100%
+          object-fit: cover
+        .owl-dot
+          &:focus
+            outline: none
+          span
+            width: 30px
+            background: #E5E5E5
+          &:focus
+            outline: none
+          &.active span, &:hover span
+            background: #0494D9
+.boxTitle
+  @include prefix(display,flex)
+  @include prefix(flex-direction, row)
+  @include prefix(flex-wrap, nowrap)
+  @include prefix(justify-content, space-between)
+  @include prefix(align-items, center)
+  padding-top: 2.0rem
+  padding-bottom: 2rem
+  .line
+    width: 40%
+    background: rgba(84,148,215,0.5)
+    height: 1px
+  h2
+    font-size: 1rem
+    font-family: "museo_sans_cyrl100"
+    color: #0494D9
+    position: relative
+    top: -5px
+.boxCarouselProduct
+  .owl-stage-outer
+    z-index: 100
+  .owl-nav
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, space-between)
+    @include prefix(align-items, center)
+    button
+      &:hover
+        background: rgba(255,255,255,.65) !important
+        outline: none
+      &:focus
+        outline: none
+      span
+        display: block
+        font-size: 0rem
+        color: #0494D9
+        font-family: "museo_sans500"
+        @include cover-background("../image/nav.png", "center", "center", "local")
+        height: 50px
+        width: 31px
+        &:focus
+          outline: none
+      &.owl-next
+        position: relative
+        left: 2rem
+      &.owl-prev
+        position: relative
+        left: -3rem
+        span
+          transform: rotateY(180deg)
+  .corousel-home-product
+    .boxProduct
+      position: relative
+      padding-top: 1.5rem
+      min-height: 360px
+      &:hover
+        .overflow
+          display: block
+      &.heightProduct
+        min-height: 360px
+      .overflow
+        position: absolute
+        border-radius: 40px
+        display: none
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: $celeste
+        // rgba(4, 148, 217, .95)
+        z-index: 100
+        .boxOverflow
+          height: inherit
+          @include prefix(display,flex)
+          @include prefix(flex-direction, column)
+          @include prefix(flex-wrap, nowrap)
+          @include prefix(justify-content, space-between)
+          @include prefix(align-content, center)
+          @include prefix(align-items, center)
+          text-align: center
+          .infoFooter
+            color: white
+            font-family: "museo_sans500"
+            font-size: .95rem
+            padding-bottom: 1rem
+            text-transform: uppercase
+          .info
+            h3, h4
+              color: white
+              font-family: "museo_sans500"
+              font-size: 1.25rem
+              line-height: 1em
+            h4
+              font-size: 2.25rem
+              line-height: 1.75em
+              font-family: "museo_sans500_italic"
+            a
+              display: block
+              background: white
+              padding: 3px 0
+              font-size: 1rem
+              line-height: 1.5em
+              font-family: "museo_sans500_italic"
+              // border: 1px solid #FDC908
+              margin-top: .75rem
+              span
+                margin-left: .5rem
+
+      .boxDetail
+        padding-top: 1rem
+        padding-bottom: 1rem
+        .price
+          color: #002694
+          font-family: "museo_sans500"
+          font-size: 1rem
+          line-height: 1.85em
+          text-align: center
+        .info
+          color: #0494D9
+          font-family: "museo_sans500"
+          font-size: .8rem
+          line-height: 1em
+          text-align: center
+      .boxImg
+        overflow: hidden
+        height: 200px
+        @include prefix(display,flex)
+        @include prefix(flex-direction, column)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, center)
+        @include prefix(align-items, center)
+        img
+          // display: block
+          // width: 100%
+          // height: 100%
+          // object-fit: cover
+          max-width: auto
+          max-height: 80%
+          width: auto

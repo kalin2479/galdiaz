@@ -1,0 +1,39 @@
+.boxSedes
+  width: 90%
+  margin: auto
+  &.boxSedes-user
+    width: 80%
+    .boxRow
+      .boxColumn
+        &:first-child
+          width: 15%
+        &:last-child
+          width: 85%
+  .boxRow
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, wrap)
+    @include prefix(justify-content, space-between)
+    @include prefix(align-items, center)
+    padding-bottom: 1.5rem
+    border-bottom: 1px solid $celesteClaro
+    margin-bottom: 1.5rem
+    &:last-child
+      border-bottom: 0
+    .boxColumn
+      .boxLocation
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, wrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, flex-start)
+      &:first-child
+        width: 30%
+      &:last-child
+        width: 70%
+      svg
+        color: $amarrillo
+        margin-right: .5rem
+      p
+        &.location
+          font-family: "museo_sans500"

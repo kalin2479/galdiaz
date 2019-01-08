@@ -1,0 +1,482 @@
+#boxFactura
+  display: none
+  .error
+    display: none
+    padding-bottom: .65rem
+    color: red
+    text-align: center
+.boxBtnImportacion
+  margin-top: 3rem
+  padding-left: .75rem
+  a
+    font-size: .85rem
+.boxNavCenter
+  @include prefix(display,flex)
+  @include prefix(flex-direction, row)
+  @include prefix(flex-wrap, nowrap)
+  @include prefix(justify-content, center)
+  @include prefix(align-items, center)
+  &.oneElement
+    a
+      &:last-child
+        margin-left: 0
+      svg
+        margin-left: .5rem
+  a
+    &:last-child
+      margin-left: 6rem
+  svg
+    margin-left: 2.5rem
+.boxAddCar
+  padding-bottom: 3rem
+  padding-top: 4rem
+  .boxNavCenter
+    a
+      color: $celeste
+      font-size: .85rem
+    svg
+      color: $celeste
+      margin-left: .5rem
+  .boxImageMail
+    margin: auto
+    text-align: center
+    img
+      width: 150px
+  .boxDescriptionCenter
+    padding: .5rem 0 .75rem
+    p
+      color: $celeste
+      font-size: .85rem
+      text-align: center
+.btnCierre
+  display: block
+  text-align: center
+  font-size: .85rem
+  margin-top: .5rem
+.containerCar
+  margin-top: 3rem
+  border: 1px solid $celeste
+  border-radius: 10px
+  overflow: hidden
+  &.procesoPago
+    .boxTable
+      .tableHeader
+        .columnCar
+          padding: .5rem 0
+          font-size: .7rem
+          &:nth-of-type(1)
+            width: 7%
+          &:nth-of-type(2)
+            width: 30%
+          &:nth-of-type(3)
+            width: 30%
+          &:nth-of-type(4)
+            width: 7%
+          &:nth-of-type(5)
+            width: 16%
+          &:nth-of-type(6)
+            width: 10%
+      .tableBody
+        border: 0
+        .row
+          border-bottom: 1px solid $celeste
+          margin-bottom: 0
+          &:last-child
+            border: 0
+          &.boxAmarrillo
+            @include prefix(justify-content, flex-start)
+            @include prefix(align-items, center)
+            background: #FDC624
+            padding: .75rem 0
+            border: 0
+            div
+              padding-left: 1rem
+              p
+                color: $azul
+                font-family: "museo_sans_cyrl700"
+          &.boxTarjetas
+            @include prefix(justify-content, center)
+            @include prefix(align-items, center)
+            padding: 1.75rem 0
+            border: 0
+            .miTarjetas
+              @include prefix(display,flex)
+              @include prefix(flex-direction, row)
+              @include prefix(flex-wrap, nowrap)
+              @include prefix(justify-content, center)
+              @include prefix(align-items, center)
+            p
+              color: $celeste
+              margin-left: 0rem
+              margin-right: .5rem
+              &.priceBig
+                font-size: 1.85rem
+                margin-left: .5rem
+          &.boxCostoEnvio
+            background: #bdd2f0
+            color: #5680BA
+            padding: 0
+            .columnCar
+              padding: 0.25rem 0
+        .check
+          width: 30px
+        .groupElement
+          span
+            &.item
+              display: block
+              text-align: center
+              width: 100%
+          .boxTitleCar
+            h2, h3
+              font-size: .8rem
+            h3
+              font-family: "museo_sans_cyrl700"
+        .columnCar
+          &:nth-of-type(1)
+            width: 7%
+          &:nth-of-type(2)
+            width: 30%
+          &:nth-of-type(3)
+            width: 30%
+          &:nth-of-type(4)
+            width: 7%
+          &:nth-of-type(5)
+            width: 16%
+          &:nth-of-type(6)
+            width: 10%
+  &.importacion
+    margin-bottom: 1rem
+    margin-top: 1rem
+    .boxTable
+      .tableHeader
+        .columnCar
+          padding: .5rem 0
+          font-size: .7rem
+          &:nth-of-type(1)
+            width: 10%
+          &:nth-of-type(2)
+            width: 20%
+          &:nth-of-type(3)
+            width: 40%
+          &:nth-of-type(4)
+            width: 10%
+          &:nth-of-type(5)
+            width: 20%
+      .tableBody
+        border: 0
+        .center
+          text-align: center
+        .row
+          border-bottom: 1px solid $celeste
+          &:last-child
+            border: 0
+        .check
+          width: 30px
+        .groupElement
+          &.center
+            margin: auto
+          span
+            &.item
+              display: block
+              text-align: center
+              width: 100%
+          .boxTitleCar
+            margin: auto
+            text-align: center
+            h2, h3
+              font-size: .8rem
+            h3
+              font-family: "museo_sans_cyrl700"
+        .columnCar
+          &.flexIcon
+            @include prefix(display,flex)
+            @include prefix(flex-direction, row)
+            @include prefix(flex-wrap, nowrap)
+            @include prefix(justify-content, center)
+            @include prefix(align-items, center)
+            a
+              &:first-child
+                margin-right: .75rem
+          &:nth-of-type(1)
+            width: 10%
+          &:nth-of-type(2)
+            width: 20%
+          &:nth-of-type(3)
+            width: 40%
+          &:nth-of-type(4)
+            width: 10%
+          &:nth-of-type(5)
+            width: 20%
+  &.historial
+    margin-bottom: 1rem
+    .boxTable
+      .tableHeader
+        .columnCar
+          padding: .5rem 0
+          font-size: .7rem
+          &:nth-of-type(1)
+            width: 10%
+          &:nth-of-type(2)
+            width: 30%
+          &:nth-of-type(3)
+            width: 12%
+          &:nth-of-type(4)
+            width: 10%
+          &:nth-of-type(5)
+            width: 15%
+          &:nth-of-type(6)
+            width: 15%
+          &:nth-of-type(7)
+            width: 8%
+      .tableBody
+        border: 0
+
+        .row
+          border-bottom: 1px solid $celeste
+          &:last-child
+            border: 0
+        .check
+          width: 30px
+        .groupElement
+          span
+            &.item
+              display: block
+              text-align: center
+              width: 100%
+          .boxTitleCar
+            h2, h3
+              font-size: .8rem
+            h3
+              font-family: "museo_sans_cyrl700"
+        .columnCar
+          &:nth-of-type(1)
+            width: 10%
+          &:nth-of-type(2)
+            width: 30%
+          &:nth-of-type(3)
+            width: 12%
+          &:nth-of-type(4)
+            width: 10%
+          &:nth-of-type(5)
+            width: 15%
+          &:nth-of-type(6)
+            width: 15%
+          &:nth-of-type(7)
+            width: 8%
+  .boxDetailCar
+    padding-top: 1.5rem
+    padding-bottom: .5rem
+    .detailBottom
+      padding-right: 5rem
+      p
+        text-align: right
+        font-size: .65rem
+    .detailTop
+      @include prefix(display,flex)
+      @include prefix(flex-direction, row)
+      @include prefix(flex-wrap, wrap)
+      @include prefix(justify-content, flex-end)
+      @include prefix(align-items, center)
+      &.boxDetailPago
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, space-between)
+        @include prefix(align-items, center)
+        padding-bottom: 2rem
+        .boxComprar
+          a
+            font-size: .85rem
+            font-family: "museo_sans_cyrl700"
+        .boxTermino
+          width: 75%
+          padding-left: 1rem
+          h2,
+          p
+            color: $azul
+            font-size: .65rem
+          h2
+            font-family: "museo_sans_cyrl700"
+            font-size: 1rem
+      .boxComprar
+        margin-right: 2rem
+        text-align: center
+        p
+          text-align: center
+          font-size: .75rem
+        a
+          border: 0
+          margin: auto
+          background: $celeste
+          display: inline-block
+          border-radius: 5px
+          padding: 2px 10px
+          color: white
+          font-size: .75rem
+          font-family: "museo_sans500"
+          transition: .5s all ease
+          &:hover
+            background: $azul
+        &.azul
+          a
+            background: $azul
+            &:hover
+              background: $celeste
+      .boxPrecio
+        margin-right: 2rem
+        p
+          color: $azul
+          text-align: left
+          font-size: .85rem
+          font-family: "museo_sans500"
+          span
+            color: $celeste
+            font-size: 1.5rem
+            margin-left: 2rem
+  .tableFooter
+    border-bottom: 1px solid $celeste
+    div
+      background: #bdd2f0
+      color: $azul
+      text-align: right
+      padding: 1rem 8rem 1rem 0
+      margin-top: 1rem
+      margin-bottom: 1rem
+  .boxTable
+    .tableBody
+      padding-top: .5rem
+      border-bottom: 1px solid $celeste
+      .row
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, wrap)
+        @include prefix(justify-content, space-between)
+        @include prefix(align-items, center)
+        margin-bottom: .5rem
+      .groupPrice
+        p
+          color: $celesteClaro
+          font-size: .85rem
+          font-family: "museo300"
+          text-align: center
+          &.detalle
+            color: $azul
+            font-size: .7rem
+            font-family: "museo_sans500"
+      .groupCant
+        select
+          border: 1px solid $celeste
+          padding: .15rem 1rem
+          border-radius: 5px
+          display: block
+          margin: auto
+        a
+          border: 0
+          margin-top: .4rem
+          background: $celeste
+          display: inline-block
+          border-radius: 5px
+          padding: 1px 3px
+          color: white
+          font-size: .65rem
+          font-family: "museo_sans500"
+          transition: .5s all ease
+          &:hover
+            background: $azul
+      .groupElement
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, nowrap)
+        @include prefix(justify-content, flex-start)
+        @include prefix(align-items, center)
+        img
+          width: 80px
+        .boxStock
+          margin-left: 2.5rem
+          h2
+            color: $azul
+            font-size: .75rem
+            font-family: "museo_sans500"
+            line-height: 1em
+            text-align: center
+            line-height: 1.5em
+        .boxTitleCar
+          h2
+            color: $celeste
+            font-size: .75rem
+            font-family: "museo300"
+            line-height: 1em
+          h3
+            font-family: "museo_sans500"
+
+      .columnCar
+        text-align: center
+        color: #5e8ed9
+        font-size: 1rem
+        font-family: "museo_sans500"
+        line-height: 1.5em
+        padding: 1rem 0
+        &:nth-of-type(1)
+          width: 40%
+        &:nth-of-type(2)
+          width: 15%
+        &:nth-of-type(3)
+          width: 15%
+        &:nth-of-type(4)
+          width: 15%
+        &:nth-of-type(5)
+          width: 15%
+    .tableHeader
+      .row
+        background: #bdd2f0
+        @include prefix(display,flex)
+        @include prefix(flex-direction, row)
+        @include prefix(flex-wrap, wrap)
+        @include prefix(justify-content, space-between)
+        @include prefix(align-items, center)
+      .columnCar
+        text-align: center
+        color: #5e8ed9
+        font-size: 1rem
+        font-family: "museo_sans500"
+        line-height: 1.5em
+        &:nth-of-type(1)
+          width: 40%
+        &:nth-of-type(2)
+          width: 15%
+        &:nth-of-type(3)
+          width: 15%
+        &:nth-of-type(4)
+          width: 15%
+        &:nth-of-type(5)
+          width: 15%
+  .carHeader
+    padding: .5rem 5rem .35rem 10rem
+    @include prefix(display,flex)
+    @include prefix(flex-direction, row)
+    @include prefix(flex-wrap, nowrap)
+    @include prefix(justify-content, space-between)
+    @include prefix(align-items, flex-start)
+    .boxConfirmar
+      p
+        font-size: .65rem
+        text-align: center
+      a
+        border: 0
+        background: $azul
+        display: inline-block
+        border-radius: 5px
+        padding: 2px 3px
+        color: white
+        font-size: .75rem
+        font-family: "museo_sans500"
+        transition: .5s all ease
+        &:hover
+          background: $celeste
+
+    p
+      color: $azul
+      font-size: .8rem
+      font-family: "museo_sans_cyrl700"
+      text-align: left
+      line-height: 1.5em
