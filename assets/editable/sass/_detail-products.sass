@@ -1,0 +1,96 @@
+.section-detail-product
+	.container
+		.containerBread
+			width: 85%
+			margin: 0 auto
+			span
+				color: $celeste
+				font-size: 1.2rem
+				font-family: "museo_sans_cyrl700"
+		.innerProducts
+			width: 85%
+			margin: 30px auto
+			display: flex
+			justify-content: space-between
+			flex-flow: row wrap
+			@media screen and (min-width:992px)
+				margin: 130px auto
+			.columnProduct
+				width: 100%
+				padding: 0
+				margin-top: 30px
+				&:first-child
+					width: 100%
+					margin-top: 0
+				@media screen and (min-width:768px)
+					width: 50%
+					margin-top: 0
+					&:first-child
+						width: 35%
+				.owl-theme
+					.owl-dots
+						.owl-dot
+							&.active
+								span
+									background: #5693ce
+							&:hover
+								span
+									background: #5693ce
+							span
+								width: 25px
+				.codigo
+					color:#5693ce
+					font-size: 1.1rem
+					font-family: "museo_sans_cyrl700"
+					border-bottom: 1px solid #5693ce
+					width: 100%
+					padding-bottom: 30px
+					@media screen and (min-width:768px)
+						width: 35%
+					@media screen and (min-width:768px)
+						width: 40%
+				.especificaciones
+					color:#5693ce
+					font-size: 1.1rem
+					font-family: "museo_sans_cyrl700"
+					padding: 30px 0
+				ul
+					list-style: disc
+					margin-left: 18px
+					li
+						color: #5693ce
+						font-size: 0.9rem
+						font-family: "museo300"
+						margin-bottom: 30px
+				.priceProduct
+					h2
+						font-family: "museo_sans500_italic"
+						color: #5693ce
+						font-size: 2.5rem
+						margin-bottom: 30px
+				.actions
+					a
+						background: #5693ce
+						color: #fff
+						font-family: "museo_sans500_italic"
+						font-size: 1.1rem
+						padding: 15px
+						border-radius: 12px
+						display: inline-block
+						width: 42%
+						@media screen and (min-width:768px)
+							display: block
+							width: 75%
+							&:first-child
+								margin-bottom: 30px
+						@media screen and (min-width:992px)
+							display: block
+							width: 60%
+						@media screen and (min-width:1200px)
+							display: block
+							width: 48%
+						span
+							.fa-heart
+								margin-right: 10px
+							.fa-shopping-cart
+								margin-right: 10px

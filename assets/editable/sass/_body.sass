@@ -170,78 +170,77 @@
 			text-align: justify
 input[type="text"]
 	outline: 0px
-
 .search-page
-  height: 0
-  background: white
-  width: 100vw
-  position: absolute
-  top: 0
-  left: 0
-  z-index: 99
-  transition: .5s all ease
-  overflow: hidden
-  &.open
-    height: 100vh
-  .fa-times
-    color: #2e2e2e
-    font-size: 1.5rem
-  .container
-    height: inherit
-    .searchBox
-      height: inherit
-      @include prefix(display,flex)
-      @include prefix(flex-direction, column)
-      @include prefix(flex-wrap, nowrap)
-      @include prefix(justify-content, center)
-      @include prefix(align-items, center)
-      .quickLink
-        margin-top: 3rem
-        h3
-          text-align: center
-        ul
-          @include prefix(display,flex)
-          @include prefix(flex-direction, row)
-          @include prefix(flex-wrap, nowrap)
-          @include prefix(justify-content, center)
-          @include prefix(align-items, center)
-          margin-top: .25rem
-          li
-            margin-right: .5rem
-            &:last-child
-              margin-right: 0
-            a
-              line-height: 1.85em
-              font-size: 1.85rem
-              letter-spacing: .05em
-              text-transform: uppercase
-              font-family: "museo_sans_cyrl700"
-              color: #2e2e2e
-              &:hover
-                text-decoration: underline
-      form
-        width: 80%
-        .row
-          position: relative
-          .fa-search
-            position: absolute
-            bottom: 6px
-            left: 0
-        input[type="text"]
-          width: 100%
-          border: 0px
-          border-bottom: 1px solid rgb(91, 91, 91)
-          padding: 0 1.5rem
-          line-height: 1.85em
-          font-size: .85rem
-          font-family: "museo300"
-          color: #2e2e2e
-      .closeBox
-        width: 100%
-        text-align: right
-        margin-bottom: 6rem
-        a
-          svg
-            transition: .5s all ease
-            &:hover
-              transform: rotate(180deg)
+	height: 0
+	background: white
+	width: 100vw
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 99
+	transition: .5s all ease
+	overflow: hidden
+	&.open
+		height: 100vh
+	.fa-times
+		color: #2e2e2e
+		font-size: 1.5rem
+	.container
+		height: inherit
+		.searchBox
+			height: inherit
+			@include prefix(display,flex)
+			@include prefix(flex-direction, column)
+			@include prefix(flex-wrap, nowrap)
+			@include prefix(justify-content, center)
+			@include prefix(align-items, center)
+			.quickLink
+				margin-top: 3rem
+				h3
+					text-align: center
+				ul
+					@include prefix(display,flex)
+					@include prefix(flex-direction, column)
+					@include prefix(flex-wrap, nowrap)
+					@include prefix(justify-content, center)
+					@include prefix(align-items, center)
+					margin-top: .25rem
+					li
+						margin-right: .5rem
+						&:last-child
+							margin-right: 0
+						a
+							line-height: 1.85em
+							font-size: 1.85rem
+							letter-spacing: .05em
+							text-transform: uppercase
+							font-family: "museo_sans_cyrl700"
+							color: #2e2e2e
+							&:hover
+								text-decoration: underline
+			form
+				width: 80%
+				.row
+					position: relative
+					.fa-search
+						position: absolute
+						bottom: 6px
+						left: 0
+				input[type="text"]
+					width: 100%
+					border: 0px
+					border-bottom: 1px solid rgb(91, 91, 91)
+					padding: 0 1.5rem
+					line-height: 1.85em
+					font-size: .85rem
+					font-family: "museo300"
+					color: #2e2e2e
+			.closeBox
+				width: 100%
+				text-align: right
+				margin-bottom: 6rem
+				a
+					svg
+						transition: .5s all ease
+						&:hover
+							transform: rotate(180deg)
